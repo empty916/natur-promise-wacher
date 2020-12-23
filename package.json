@@ -1,0 +1,32 @@
+{
+  "name": "natur-promise-wacher",
+  "version": "1.0.0",
+  "description": "middleware of natur, which can observe the completion time of the promise action",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "pub": "npm run build && yarn publish",
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://empty916@github.com/empty916/natur-promise-wacher.git"
+  },
+  "keywords": [
+    "natur",
+    "promise",
+    "watcher",
+    "middleware"
+  ],
+  "author": "empty916@qq.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/empty916/natur-promise-wacher/issues"
+  },
+  "homepage": "https://github.com/empty916/natur-promise-wacher#readme",
+  "devDependencies": {
+    "natur": "^2.1.0",
+    "typescript": "^4.1.3"
+  }
+}
