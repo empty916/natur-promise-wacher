@@ -27,6 +27,7 @@ export const createPromiseWatcherMiddleware = () => {
 					.then(resolve)
 					.catch(err => {
 						promiseTask = [];
+						isWatching = false;
 						reject(err);
 					});
 			} else {
