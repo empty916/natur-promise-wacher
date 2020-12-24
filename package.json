@@ -1,6 +1,6 @@
 {
   "name": "natur-promise-wacher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "middleware of natur, which can observe the completion time of the promise action",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
