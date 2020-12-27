@@ -1,5 +1,8 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.createPromiseWatcherMiddleware = void 0;
 var isPromise = function (target) { return typeof (target === null || target === void 0 ? void 0 : target.then) === 'function' && typeof (target === null || target === void 0 ? void 0 : target.catch) === 'function' && typeof (target === null || target === void 0 ? void 0 : target.finally) === 'function'; };
-export var createPromiseWatcherMiddleware = function () {
+var createPromiseWatcherMiddleware = function () {
     var promiseTask = [];
     var isWatching = false;
     var collectPromiseMiddleware = function () { return function (next) { return function (record) {
@@ -40,3 +43,4 @@ export var createPromiseWatcherMiddleware = function () {
         promiseActionsFinishedPromise: promiseActionsFinishedPromise,
     };
 };
+exports.createPromiseWatcherMiddleware = createPromiseWatcherMiddleware;
